@@ -1,6 +1,7 @@
+import React from 'react';
 import PriceOption from "../PriceOption/PriceOption";
 const PriceOPtions = () => {
-    [
+    const PriceOPtions = [
         {
             "id": 1,
             "name": "Basic Membership",
@@ -42,9 +43,11 @@ const PriceOPtions = () => {
     return (
         <div>
             <h2>Best Prices in the Town.</h2>
-            {
-                PriceOPtions.map(option => <PriceOption key={option.id} option={option}></PriceOption>)
-            }
+            <div className='grid md:grid-cols-3 gap-3'>
+                {
+                    PriceOPtions.map(option => <PriceOption key={option.id} option={option}></PriceOption>)
+                }
+            </div>
         </div>
     );
 };

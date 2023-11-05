@@ -1,5 +1,7 @@
 
+import PieChart from './Components/PieChart/PieChart'
 import './App.css'
+import LineChart from './Components/LineChart/LineChart'
 // import DaisyNav from './Components/DaisyNav/DaisyNav'
 import Navbar from './Components/NavBar/Navbar'
 import PriceOPtions from './Components/PriceOptions/PriceOPtions'
@@ -15,6 +17,8 @@ function App() {
         Hello world!
       </h1>
       <PriceOPtions></PriceOPtions>
+      <LineChart></LineChart>
+      <PieChart></PieChart>
     </>
   )
 }

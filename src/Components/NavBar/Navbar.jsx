@@ -1,4 +1,4 @@
-import { list } from 'postcss';
+
 import React, { useState } from 'react';
 import Link from '../Link/Link';
 import { AiOutlineMenu, AiOutlineCloseSquare } from 'react-icons/ai';
@@ -14,7 +14,7 @@ const Navbar = () => {
     ];
     return (
         <nav className='bg-red-400 '>
-            <div className=' md:hidden text-2xl' onClick={() => setOpen(!open)}>
+            <div className='pl-4 md:hidden text-2xl' onClick={() => setOpen(!open)}>
                 {
                     open === true ?
                         <AiOutlineCloseSquare></AiOutlineCloseSquare> :
